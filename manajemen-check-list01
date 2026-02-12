@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Manajemen Stres KTI</title>
+    <style>
+        :root {
+            --pink-primary: #ff69b4;
+            --pink-light: #ffe4e1;
+            --pink-bg: #fff0f5;
+            --text-dark: #4a4a4a;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--pink-bg);
+            color: var(--text-dark);
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: var(--pink-primary);
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-header {
+            background-color: var(--pink-light);
+            padding: 10px 15px;
+            border-radius: 12px;
+            font-weight: bold;
+            color: #d87093;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 10px 5px;
+            border-bottom: 1px dashed #f0f0f0;
+            transition: 0.3s;
+        }
+        .checklist-item:hover {
+            background-color: #fff9fb;
+        }
+        input[type="checkbox"] {
+            min-width: 20px;
+            min-height: 20px;
+            margin-right: 12px;
+            margin-top: 3px;
+            accent-color: var(--pink-primary);
+            cursor: pointer;
+        }
+        label {
+            font-size: 14.5px;
+            line-height: 1.5;
+            cursor: pointer;
+        }
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: #aaa;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 11px;
+            color: #bbb;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🌸 KTI Stress-Free</h1>
+    <p class="subtitle">"Satu langkah kecil setiap hari adalah kemajuan besar."</p>
+
+    <div class="section">
+        <div class="section-header">🌿 1. Kesejahteraan Diri (Harian)</div>
+        <div class="checklist-item">
+            <input type="checkbox" id="c1">
+            <label for="c1"><b>Teknik 4-7-8:</b> Sudahkah saya melakukan relaksasi napas minimal 3 siklus hari ini?</label>
+        </div>
+        <div class="checklist-item">
+            <input type="checkbox" id="c2">
+            <label for="c2"><b>Hidrasi:</b> Apakah saya sudah minum cukup air agar otak tidak cepat lelah?</label>
+        </div>
+        <div class="checklist-item">
+            <input type="checkbox" id="c3">
+            <label for="c3"><b>Butterfly Hug:</b> Saya melakukan ini jika merasa cemas berlebih saat melihat revisi.</label>
+        </div>
+        <div class="checklist-item">
+            <input type="checkbox" id="c4">
+            <label for="c4"><b>Istirahat Layar:</b> Saya menjauh dari laptop/HP setiap 60 menit pengerjaan.</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">📚 2. Progres KTI (Anti-Panik)</div>
+        <div class="checklist-item">
+            <input type="checkbox" id="c5">
+            <label for="c5"><b>Target Kecil:</b> Hari ini cukup menyelesaikan 1 sub-bab atau 2 paragraf saja.</label>
+        </div>
+        <div class="checklist-item">
+            <input type="checkbox" id="c6">
+            <label for="c6"><b>Cari Referensi:</b> Saya sudah mengunduh minimal 1 jurnal referensi baru.</label>
+        </div>
+        <div class="checklist-item">
+            <input type="checkbox" id="c7">
+            <label for="c7"><b>Rapikan Kutipan:</b> Saya sudah mencatat sumber agar tidak menumpuk di akhir.</label>
+        </div>
+        <div class="checklist-item">
+            <input type="checkbox" id="c8">
+            <label for="c8"><b>Komunikasi:</b> Sudahkah saya mengirim pesan/update ke dosen pembimbing?</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">✨ 3. Afirmasi Positif</div>
+        <div class="checklist-item">
+            <input type="checkbox" id="c9">
+            <label for="c9">Saya sadar bahwa revisi bukan berarti gagal, tapi jalan menuju perbaikan.</label>
+        </div>
+        <div class="checklist-item">
+            <input type="checkbox" id="c10">
+            <label for="c10">Saya mampu menyelesaikan KTI ini tepat waktu dengan cara saya sendiri.</label>
+        </div>
+        <div class="checklist-item">
+            <input type="checkbox" id="c11">
+            <label for="c11">Istirahat bukan berarti menyerah, tapi mengisi tenaga untuk lanjut lagi.</label>
+        </div>
+    </div>
+
+    <div class="footer">
+        Dibuat dengan kasih sayang untuk pejuang KTI ✨
+    </div>
+</div>
+
+<script>
+    // Menyimpan status checklist agar tidak hilang saat refresh
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(cb => {
+        const status = localStorage.getItem(cb.id);
+        if (status === 'true') cb.checked = true;
+        
+        cb.addEventListener('change', () => {
+            localStorage.setItem(cb.id, cb.checked);
+        });
+    });
+</script>
+
+</body>
+</html>
